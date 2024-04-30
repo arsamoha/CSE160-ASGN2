@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2: Blocky Animal</title>
+  </head>
+
+  <body onload="main()" )>
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <p></p>
+
+    <p id="numdot">XXX</p>
+
+      Leg Animation:
+      <button type="button" id="legAnimationOnButton">ON</button>
+      <button type="button" id="legAnimationOffButton">OFF</button>
+    </p>
+
+    <p>
+      Front Left Foot
+      <input
+        type="range"
+        min="-45"
+        max="45"
+        value="0"
+        class="slider"
+        id="footSlide1"
+      />
+    </p>
+
+    <p>
+      Front Right Foot
+      <input
+        type="range"
+        min="-45"
+        max="45"
+        value="0"
+        class="slider"
+        id="footSlide2"
+      />
+    </p>
+
+    <p>
+      Front Left Leg
+      <input
+        type="range"
+        min="-18"
+        max="13"
+        value="0"
+        class="slider"
+        id="legSlide1"
+      />
+    </p>
+
+    <p>
+      Front Right Leg
+      <input
+        type="range"
+        min="-18"
+        max="13"
+        value="0"
+        class="slider"
+        id="legSlide2"
+      />
+
+      <p>
+        Back Leg Left
+        <input
+          type="range"
+          min="-18"
+          max="13"
+          value="0"
+          class="slider"
+          id="legSlide3"
+        />
+
+        <p>
+            Back Leg Right
+            <input
+              type="range"
+              min="-18"
+              max="13"
+              value="0"
+              class="slider"
+              id="legSlide4"
+            />
+
+        <p>
+            Mouth
+            <input
+                type="range"
+                min="-49"
+                max="-48"
+                value="0"
+                class="slider"
+                id="mouthSlide"
+            />
+
+          <!-- Animation:
+          <button type="button" id="animationMouthOnButton">ON</button>
+          <button type="button" id="animationMouthOffButton">OFF</button>
+        </p> -->
+
+      <p>
+        Tail
+        <input
+            type="range"
+            min="-45"
+            max="45"
+            value="0"
+            class="slider"
+            id="tailSlide"
+        />
+
+      Animation:
+      <button type="button" id="animationTailOnButton">ON</button>
+      <button type="button" id="animationTailOffButton">OFF</button>
+    </p>
+
+    <p> <code>shiftKey</code> click to see something fun.</p>
+    <p id="log"></p>
+
+    <p>
+      Camera Angle
+      <input
+        type="range"
+        min="-180"
+        max="180"
+        value="5"
+        class="slider"
+        id="angleSlide"
+      />
+    </p>
+
+    <p></p>
+
+    <p>
+      <script src="./lib/webgl-utils.js"></script>
+      <script src="./lib/webgl-debug.js"></script>
+      <script src="./lib/cuon-utils.js"></script>
+      <script src="./lib/cuon-matrix.js"></script>
+      <script src="Triangle.js"></script>
+      <script src="Circle.js"></script>
+      <script src="Point.js"></script>
+      <script src="Cube.js"></script>
+      <script src="CubePrism.js"></script> 
+      <script src="BlockyAnimal.js"></script>
+    </p>
+  </body>
+</html>
